@@ -592,6 +592,9 @@ a {
     border-color: #4D5AE5;
 
 }
+.modal-formm {
+    margin-bottom: 16px;
+}
 .general-svg {
     position: absolute;
     left: 16px;
