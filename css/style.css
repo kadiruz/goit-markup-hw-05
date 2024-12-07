@@ -497,13 +497,11 @@ a {
     z-index:9999;
     /* opacity:0;
     visibility: hidden; */
-    background-color: rgba(46, 47, 66, 0.4) transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.modal-head{
-    font-weight: bold;
-    margin:15px
-}
+
 .modal-window.is-open{
     opacity:1;
     visibility: visible;
@@ -555,7 +553,7 @@ a {
 .modal-p {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5s;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
@@ -590,7 +588,7 @@ a {
 
 }   
 
-.modal-form-container-input:hover {
+.modal-form-container-input:focus {
     border-color: #4D5AE5;
 
 }
@@ -601,8 +599,11 @@ a {
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.general-svg:hover {
-    fill: #4D5AE5;
+.modal-form-container-input:focus {
+    .general-svg {
+        fill: #4D5AE5;
+    }
+    
 }
 
 .texta {
