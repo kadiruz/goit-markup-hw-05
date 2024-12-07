@@ -649,12 +649,12 @@ a {
     justify-content: center;
     fill: transparent;
 }
-.visually-hidden:checked {
-    .acceptance-label-s {
+.visually-hidden:checked .acceptance-label-s {
+     
         background-color: #404bbf;
         border: none;
         fill: #F4F4FD;
-    }
+    
 }
 .label-a {
     color: #4d5ae5;
