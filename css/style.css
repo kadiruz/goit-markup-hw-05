@@ -602,10 +602,10 @@ a {
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-container-input:focus {
-    .general-svg {
+ /* hata var */
+.modal-form-container-input:focus .general-svg {
+     
         fill: #4D5AE5;
-    }
     
 }
 
@@ -649,7 +649,8 @@ a {
     justify-content: center;
     fill: transparent;
 }
-.visually-hidden:checked .acceptance-label-s {
+/* hata var */
+.visually-hidden:checked + .acceptance-label >.acceptance-label-s  {
      
         background-color: #404bbf;
         border: none;
